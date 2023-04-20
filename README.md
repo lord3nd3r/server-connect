@@ -2,7 +2,7 @@
 Easily connect to servers that you work on
 
 
-Here's how the updated script works:
+Here's how the script works:
 
 The script first checks if an SSH key already exists on the local machine, by looking for the id_rsa private key file in the ~/.ssh/ directory. If the file doesn't exist, the script generates a new SSH key using the ssh-keygen command.
 Once the key is generated, the script adds it to the local SSH agent using the ssh-add command, so that the user is not prompted for a password each time they connect to the remote server.
