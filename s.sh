@@ -2,7 +2,8 @@
 
 # Path to the file containing server nicknames and IP addresses
 server_file="/path/to/server_file"
-
+# For WSL host
+#server_file="/mnt/c/path/to/server_file"
 # Check if the "s" command was executed with a nickname argument
 if [[ "$1" != "" && "$1" != " " ]]; then
     # Search for the nickname in the server file
