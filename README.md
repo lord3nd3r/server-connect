@@ -26,3 +26,5 @@ In this example, the file contains three server entries, each on a separate line
 When you run the s command with a nickname argument (e.g. s myserver), the script will search the server file for a line that starts with the nickname followed by a space, and extract the IP address from the second field of that line. If a matching server entry is found, the script will use the extracted IP address to SSH into the server.
 
 So as long as each server entry contains an IP address and a nickname, in any order and separated by whitespace, the script should work correctly.
+
+To run the script, use s.sh server-nickname (which is in the server file next to the IP/host)
