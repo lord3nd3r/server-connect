@@ -15,8 +15,11 @@ The order of the fields in the server file doesn't matter, as long as the fields
 For example, you could set up the server file like this:
 
 192.168.1.100 server01
+
 192.168.1.101 server02
+
 10.0.0.2    server3
+
 
 In this example, the file contains three server entries, each on a separate line. The first field is the IP address of the server, and the second field is the nickname of the server. The fields are separated by whitespace (spaces or tabs).
 
