@@ -1,3 +1,4 @@
+# By 3nd3r and JohnnySin 2023
 #!/bin/bash
 
 # Path to the file containing server nicknames and IP addresses
