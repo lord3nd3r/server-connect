@@ -10,18 +10,16 @@ The script then uses the ssh-copy-id command to add the public key to the author
 Finally, the script logs into the remote server using the ssh command.
 To use the updated script, save it to a file (e.g. s.sh), make it executable with chmod +x s.sh, and then add the directory containing the script to your $PATH environment variable. You can then execute the script by typing s nickname in the terminal, where nickname is the nickname of the server you want to connect to. The script will generate an SSH key, add it to both the local machine and the remote server, and then log in to the remote server using the key.
 
-The order of the fields in the server file doesn't matter, as long as the fields are separated by whitespace (e.g. spaces or tabs) and each line contains only one server entry.
+The order of the fields in the server file matters, as long as the fields are separated by whitespace (e.g. spaces or tabs) and each line contains only one server entry.
 
 For example, you could set up the server file like this:
 
-192.168.1.100 server01
+server01 192.168.1.100
 
-192.168.1.101 server02
+server02 192.168.1.101
 
-10.0.0.2    server03
+server03 10.0.0.2
 
-
-In this example, the file contains three server entries, each on a separate line. The first field is the IP address of the server, and the second field is the nickname of the server. The fields are separated by whitespace (spaces or tabs).
 
 When you run the s command with a nickname argument (e.g. s myserver), the script will search the server file for a line that starts with the nickname followed by a space, and extract the IP address from the second field of that line. If a matching server entry is found, the script will use the extracted IP address to SSH into the server.
 
