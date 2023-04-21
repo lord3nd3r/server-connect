@@ -2,12 +2,12 @@
 #!/bin/bash
 
 # Path to the file containing server nicknames and IP addresses
-server_file="/path/to/server_file"
+server_file="server.conf"
 # For WSL host
 #server_file="/mnt/c/path/to/server_file"
 
 # Path to the log file
-log_file="/path/to/log_file"
+log_file="s.log"
 
 # Check if the "s" command was executed with a nickname argument
 if [[ -n "$1" ]]; then
